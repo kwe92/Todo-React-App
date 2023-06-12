@@ -52,14 +52,6 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
-### What I learned
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-### Continued development
-
 ### Useful resources
 
 ## Author
