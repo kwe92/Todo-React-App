@@ -1,45 +1,52 @@
 import styled from "styled-components";
 
-const borderRadius = 0.25;
+const borderRadius = "2rem";
 
 export const StyledInputContainer = styled.div`
   display: flex;
 
   flex-direction: row;
 
-  gap: 0.5rem;
-
-  border-radius: ${borderRadius + "rem"};
+  height: 4rem;
 
   align-items: center;
 
-  height: 4rem;
+  gap: 0.5rem;
+
+  border-radius: ${borderRadius};
 
   background: white;
 
   caret-color: white;
 
   &: hover {
-    background: rgb(64, 64, 64);
+    background: rgba(200, 200, 200, 0.625);
+    // rgba(141, 136, 246, 0.2);
   }
 `;
 
 export const StyledInput = styled.input`
-  border: none;
-
-  border-radius: 2px;
-
   display: block;
-
-  color: #9495a5;
-
-  background: transparent;
 
   width: 100%;
 
   height: 100%;
 
-  padding: 6px 6px 6px 0px;
+  padding: 6px 6px 6px 72px;
+
+  border: none;
+
+  border-radius: ${borderRadius};
+
+  background: transparent;
+
+  font-family: .AppleSystemUIFont;
+
+  font-size: 18px;
+
+  color: #9495a5;
+
+  letter-spacing: -0.25px;
 
   &: focus {
     border: none;
@@ -48,7 +55,6 @@ export const StyledInput = styled.input`
 `;
 
 export const Wrapper = styled.div`
-  padding-top: 1rem;
-  border-radius: ${borderRadius * 2 + "rem"};
+  padding-top: 2.5rem;
   width: 100%;
 `;

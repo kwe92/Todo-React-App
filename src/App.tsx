@@ -10,7 +10,7 @@ export default function App() {
     <>
       <img
         src={images.bgDesktopLight}
-        style={{ height: "18.75rem", position: "absolute" }}
+        style={{ height: "18.75rem", position: "absolute", width: "100%" }}
       />
       <MainContainer>
         <TodoSection>
@@ -24,17 +24,16 @@ export default function App() {
 const MainContainer = styled(Column)`
   width: 100vw;
   height: 100vh;
-  justify-content: center;
-
-  padding-top: 70px;
+  justify-content: start;
 `;
 
 const TodoSection = styled(Column)`
   position: relative;
+  padding-top: 70px;
   align-items: start;
   justify-content: start;
   width: 540px;
   height: 740px;
   z-index: 1;
-  background: #ff9999;
+  // background: #ff9999;
 `;
