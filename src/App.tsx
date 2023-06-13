@@ -1,26 +1,40 @@
 import React from "react";
-
+import { AppBackgroundImage } from "./components/background_image/BackgroundImageStyles";
+import { images } from "./constants/images";
+import styled from "styled-components";
+import { Column } from "./styles/layout/Flex";
+import TitleIconListTile from "./components/title_icon/TitleIconListTile";
+import CreateTodo from "./components/create_todo_input/CreateTodo";
 export default function App() {
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        position: "absolute",
-        width: "100vw",
-        height: "100vh",
-        backgroundImage:
-          "linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%))",
-        color: "#1429a9",
-      }}
-    >
-      <h1>
-        Enjoy all that you have laboured for under the sun for that is the gift
-        from God for thy works.
-      </h1>
-    </div>
+    <>
+      <img
+        src={images.bgDesktopLight}
+        style={{ height: "18.75rem", position: "absolute" }}
+      />
+      <MainContainer>
+        <TodoSection>
+          <TitleIconListTile />
+          <CreateTodo />
+        </TodoSection>
+      </MainContainer>
+    </>
   );
 }
+const MainContainer = styled(Column)`
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
 
-// linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%)
+  padding-top: 70px;
+`;
+
+const TodoSection = styled(Column)`
+  position: relative;
+  align-items: start;
+  justify-content: start;
+  width: 540px;
+  height: 740px;
+  z-index: 1;
+  background: #ff9999;
+`;
