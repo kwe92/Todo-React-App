@@ -9,7 +9,7 @@ export default function CreateTodo() {
           placeholder="Create a new todo..."
           onChange={() => {}}
           value={""}
-        ></StyledInput>
+        />
       </StyledInputContainer>
     </Wrapper>
   );
