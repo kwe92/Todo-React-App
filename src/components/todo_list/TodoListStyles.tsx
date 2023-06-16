@@ -8,7 +8,6 @@ const TodoListContainer = styled.ul`
   width: 100%;
   height: 440px;
   margin-top: 1.5rem;
-  // TODO: Maybe change radius
   border-radius: 2rem;
   background: #e981f5;
 `;
