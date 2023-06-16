@@ -9,7 +9,7 @@ const TitleIcon = styled(Row)`
 
 const Title = styled(Row)`
   align-items: start;
-  font-size: 40px;
+  font-size: 2.5rem;
   color: white;
 `;
 
