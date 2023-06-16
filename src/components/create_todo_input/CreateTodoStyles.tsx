@@ -32,7 +32,7 @@ export const StyledInput = styled.input`
 
   height: 100%;
 
-  padding: 6px 6px 6px 72px;
+  padding: 0.375rem 0.375rem 0.375rem 4.5rem;
 
   border: none;
 
@@ -42,11 +42,11 @@ export const StyledInput = styled.input`
 
   font-family: .AppleSystemUIFont;
 
-  font-size: 18px;
+  font-size: 1.125rem;
 
   color: #9495a5;
 
-  letter-spacing: -0.25px;
+  letter-spacing: -0.015625rem;
 
   &: focus {
     border: none;
