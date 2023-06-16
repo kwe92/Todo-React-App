@@ -5,6 +5,7 @@ import CreateTodo from "./components/create_todo_input/CreateTodo";
 import BackgroundImage from "./components/app_background_image/BackGroundImage";
 import { MainContainer, TodoSection } from "./AppStyles";
 import { styled } from "styled-components";
+import TodoList from "./components/todo_list/TodoList";
 export default function App() {
   return (
     <>
@@ -13,19 +14,9 @@ export default function App() {
         <TodoSection>
           <TitleIconListTile />
           <CreateTodo />
-          <TodoListContainer></TodoListContainer>
+          <TodoList></TodoList>
         </TodoSection>
       </MainContainer>
     </>
   );
 }
-
-const TodoListContainer = styled.ul`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 400px;
-  background: #e981f5;
-`;
