@@ -5,7 +5,6 @@ const ListItemListTile = styled(Row)`
   width: 100%;
   height: 64px;
   justify-content: start;
-  background: orange;
   padding-top: 12px;
   padding-bottom: 12px;
 `;
@@ -16,8 +15,12 @@ const CheckCircle = styled(Column)`
   margin-left: 24px;
   margin-right: 24px;
   border-radius: 12px;
-  //   TODO: Change border color
-  border: 1px solid grey;
+  border: 1px solid #979797;
+  // background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  cursor: pointer;
+  &:hover {
+    background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  }
 `;
 
 const HorizontalLine = styled.div`
