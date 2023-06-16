@@ -6,7 +6,10 @@ const TodoListContainer = styled.ul`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 400px;
+  height: 440px;
+  margin-top: 1.5rem;
+  // TODO: Maybe change radius
+  border-radius: 2rem;
   background: #e981f5;
 `;
 
