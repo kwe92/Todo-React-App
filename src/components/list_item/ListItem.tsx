@@ -1,30 +1,21 @@
-import React, { ReactNode } from "react";
-import { Column, Row } from "../../styles/layout/Flex";
-import styled from "styled-components";
+import React, { Fragment, ReactNode } from "react";
 import { images } from "../../constants/images";
+import {
+  CheckCircle,
+  HorizontalLine,
+  ListItemListTile,
+} from "./ListItemStyles";
 
 export default function ListItem({ todo }: { todo: string }) {
   return (
-    <ListItemListTile>
-      <CheckCircle>
-        <img src={images.iconCheck} />
-      </CheckCircle>
-      {todo}
-    </ListItemListTile>
+    <Fragment>
+      <ListItemListTile>
+        <CheckCircle>
+          <img src={images.iconCheck} />
+        </CheckCircle>
+        <div style={{ width: "85%" }}>{todo}</div>
+      </ListItemListTile>
+      <HorizontalLine />
+    </Fragment>
   );
 }
-
-const ListItemListTile = styled(Row)`
-  width: 100%;
-  height: 64px;
-  justify-content: start;
-  background: orange;
-`;
-
-const CheckCircle = styled(Column)`
-  width: 24px;
-  height: 24px;
-  border-radius: 12px;
-  //   TODO: Change border color
-  border: 1px solid grey;
-`;
