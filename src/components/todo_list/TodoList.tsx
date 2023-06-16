@@ -1,7 +1,11 @@
 import React from "react";
 import { TodoListContainer } from "./TodoListStyles";
+import ListItem from "../list_item/ListItem";
 
-// TODO: Implement Functional Component
 export default function TodoList() {
-  return <TodoListContainer></TodoListContainer>;
+  return (
+    <TodoListContainer>
+      <ListItem todo="Aim single mindedly at one thing and see what happens" />
+    </TodoListContainer>
+  );
 }
