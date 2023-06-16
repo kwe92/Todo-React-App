@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+// TODO: Add box shadows
 const TodoListContainer = styled.ul`
   display: flex;
   flex-direction: column;
