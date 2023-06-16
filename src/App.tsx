@@ -6,6 +6,10 @@ import BackgroundImage from "./components/app_background_image/BackGroundImage";
 import { MainContainer, TodoSection } from "./AppStyles";
 import { styled } from "styled-components";
 import TodoList from "./components/todo_list/TodoList";
+import ListItem from "./components/list_item/ListItem";
+
+// TODO: Create ListItemListTile
+
 export default function App() {
   return (
     <>
@@ -14,7 +18,7 @@ export default function App() {
         <TodoSection>
           <TitleIconListTile />
           <CreateTodo />
-          <TodoList></TodoList>
+          <TodoList />
         </TodoSection>
       </MainContainer>
     </>
