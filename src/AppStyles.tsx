@@ -8,12 +8,11 @@ const MainContainer = styled(Column)`
 `;
 
 const TodoSection = styled(Column)`
+  width: 33.75rem;
+  height: 100%;
   position: relative;
   padding-top: 4.375rem;
-  align-items: start;
   justify-content: start;
-  width: 33.75rem;
-  height: 46.25rem;
   z-index: 1;
   // background: #ff9999;
 `;
