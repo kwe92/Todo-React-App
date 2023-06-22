@@ -1,5 +1,11 @@
-import React from "react";
-import { TodoListContainer } from "./TodoListStyles";
+import React, { Fragment } from "react";
+import {
+  BottomSection,
+  ButtonContainer,
+  ItemsLeftSection,
+  TextButton,
+  TodoListContainer,
+} from "./TodoListStyles";
 import ListItem from "../list_item/ListItem";
 
 export default function TodoList() {
@@ -14,5 +20,21 @@ export default function TodoList() {
     return <ListItem key={quote.substring(0, 15) + index} todo={quote} />;
   });
 
-  return <TodoListContainer>{listItems}</TodoListContainer>;
+  return (
+    <TodoListContainer>
+      {listItems}
+      <BottomSection>
+        <ItemsLeftSection>{`${listItems.length} items left`}</ItemsLeftSection>
+        <ButtonContainer>
+          <TextButton>All</TextButton>
+          <TextButton>Active</TextButton>
+          <TextButton>Complete</TextButton>
+        </ButtonContainer>
+
+        <TextButton style={{ paddingRight: "1.5rem" }}>
+          Clear Completed
+        </TextButton>
+      </BottomSection>
+    </TodoListContainer>
+  );
 }
