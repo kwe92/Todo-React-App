@@ -26,6 +26,6 @@ const CheckCircle = styled(Column)`
 const HorizontalLine = styled.div`
   width: 100%;
   height: 1px;
-  background: grey;
+  background: #e3e4f1;
 `;
 export { ListItemListTile, CheckCircle, HorizontalLine };
