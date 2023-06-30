@@ -1,19 +1,25 @@
-import React, { Fragment, ReactNode } from "react";
+import React, { Fragment, ReactNode, useState } from "react";
 import { images } from "../../constants/images";
 import {
   CheckCircle,
   HorizontalLine,
   ListItemListTile,
+  TodoTextContainer,
 } from "./ListItemStyles";
 
 export default function ListItem({ todo }: { todo: string }) {
+  const [completeTodo, setCompleteTodo] = useState(false);
+
+  const handleCompleteTodo = () => setCompleteTodo((prevState) => !prevState);
   return (
     <Fragment>
       <ListItemListTile>
-        <CheckCircle>
+        <CheckCircle completeTodo={completeTodo} onClick={handleCompleteTodo}>
           <img src={images.iconCheck} />
         </CheckCircle>
-        <div style={{ width: "85%" }}>{todo}</div>
+        <TodoTextContainer completeTodo={completeTodo}>
+          {todo}
+        </TodoTextContainer>
       </ListItemListTile>
       <HorizontalLine />
     </Fragment>
